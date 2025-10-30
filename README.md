@@ -4,7 +4,7 @@ Este é o repositório do front-end para o projeto de Calculadora de Pegada de C
 
 A aplicação é um *Single Page Application* (SPA) interativo construído com React e TypeScript, permitindo que os usuários calculem sua pegada de carbono anual.
 
-**Site no Ar:** ``
+**Site no Ar:** `https://app-calculadora-carbono.vercel.app`
 
 ---
 
