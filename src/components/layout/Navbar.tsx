@@ -1,21 +1,31 @@
 import type React from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
+import { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar: React.FC = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const handleToggle = () => setIsMenuOpen(!isMenuOpen);
+  const closeMobileMenu = () => setIsMenuOpen(false);
+
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <NavLink to="/" className="navbar-logo">
+        <NavLink to="/" className="navbar-logo" onClick={closeMobileMenu}>
           Calculadora CO₂
         </NavLink>
-        <ul className="nav-menu">
+        <div className="menu-icon" onClick={handleToggle}>
+          {isMenuOpen ? <FaTimes /> : <FaBars />}
+        </div>
+        <ul className={isMenuOpen ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item">
             <NavLink
               to="/"
               className={({ isActive }) =>
                 isActive ? "nav-link active" : "nav-link"
               }
+              onClick={closeMobileMenu}
             >
               Calculadora
             </NavLink>
@@ -26,6 +36,7 @@ const Navbar: React.FC = () => {
               className={({ isActive }) =>
                 isActive ? "nav-link active" : "nav-link"
               }
+              onClick={closeMobileMenu}
             >
               Metodologia
             </NavLink>
@@ -36,7 +47,10 @@ const Navbar: React.FC = () => {
               className={({ isActive }) =>
                 isActive ? "nav-link active" : "nav-link"
               }
-            >Sobre CO₂</NavLink>
+              onClick={closeMobileMenu}
+            >
+              Sobre CO₂
+            </NavLink>
           </li>
         </ul>
       </div>
