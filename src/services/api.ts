@@ -17,7 +17,7 @@ export const calcularPegadaCarbono = async (
   data: CarbonoInputData
 ): Promise<CarbonoOutputData> => {
   try {
-    const response = await apiClient.post<CarbonoOutputData>("/calcular", data);
+    const response = await apiClient.post<CarbonoOutputData>("/api/calcular", data);
     return response.data;
   } catch (error) {
     console.error("Api error: ", error);
@@ -26,7 +26,7 @@ export const calcularPegadaCarbono = async (
 };
 
 export const getFatoresEmissao = async (): Promise<FatoresOutputData> => {
-  const response = await fetch(`${API_BASE_URL}/fatores`);
+  const response = await fetch(`${API_BASE_URL}/api/fatores`);
   if (!response.ok) {
     throw new Error("Erro ao buscar fatores de emissão");
   }
