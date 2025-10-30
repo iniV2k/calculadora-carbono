@@ -1,0 +1,51 @@
+.results-container h3 {
+  text-align: center;
+  margin-top: 0;
+  color: #004d40;
+  font-size: 1.5rem;
+}
+
+/* O card grande do total */
+.results-total {
+  text-align: center;
+  margin: 20px 0;
+  padding: 20px;
+  background: #e0f2f1;
+  border-radius: 8px;
+}
+
+.results-total strong {
+  display: block;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #004d40;
+  line-height: 1.1;
+}
+
+.results-total span {
+  font-size: 1rem;
+  color: #00796b;
+  font-weight: 500;
+}
+
+/* Títulos das seções de detalhamento */
+.results-container h4 {
+  color: #004d40;
+  border-bottom: 2px solid #e0f2f1;
+  padding-bottom: 5px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.results-container ul,
+.results-container ol {
+  padding-left: 20px;
+  line-height: 1.7;
+  margin: 0;
+  color: #333;
+}
+
+.results-container li {
+  margin-bottom: 8px;
+}

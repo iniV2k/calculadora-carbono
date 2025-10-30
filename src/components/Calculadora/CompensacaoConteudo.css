@@ -1,0 +1,73 @@
+/* Container principal do conteúdo */
+.compensacao-container {
+  margin: 0;
+  padding: 0;
+}
+
+/* O parágrafo de resumo no topo */
+.compensacao-summary {
+  font-size: 1.15rem;
+  text-align: center;
+  color: #333;
+  background-color: #f4f7f6;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.compensacao-summary strong {
+  color: #004d40;
+  font-size: 1.25rem;
+}
+
+/* Os "cards" de Compensação e Redução */
+.compensacao-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background: #fdfdfd;
+}
+
+/* Título de cada card */
+.compensacao-card-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: #004d40;
+  font-size: 1.4rem;
+  border-bottom: 2px solid #e0f2f1;
+  padding-bottom: 10px;
+}
+
+/* Estiliza as listas de itens */
+.compensacao-card ul,
+.compensacao-card ol {
+  padding-left: 20px;
+  line-height: 1.7;
+}
+
+.compensacao-card li {
+  margin-bottom: 10px;
+}
+
+/* Estilo para a lista dos "Top Emitters" (Redução) */
+.top-emitter-list li {
+  font-weight: 500;
+}
+
+.top-emitter-list strong {
+  color: #c62828;
+  margin-right: 5px;
+}
+
+/* Aquele texto pequeno de "Onde compensar" */
+.compensacao-card small {
+  display: block;
+  margin-top: 15px;
+  color: #777;
+  font-style: italic;
+  text-align: center;
+}

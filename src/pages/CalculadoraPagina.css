@@ -1,0 +1,78 @@
+/* Layout principal da calculadora */
+.calculadora-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.form-column {
+  background: #ffffff;
+  padding: 24px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  order: 1;
+}
+
+.results-column {
+  order: 2; 
+}
+
+/* --- Media Query para Desktops --- */
+@media (min-width: 992px) {
+  .calculadora-layout {
+    grid-template-columns: 55fr 45fr;
+  }
+
+  .results-column {
+    position: sticky;
+    top: 90px;
+    height: fit-content;
+    
+    order: 2;
+  }
+  
+  .form-column {
+    order: 1;
+  }
+}
+
+/* Estilo do título do formulário */
+.form-column h2 {
+  text-align: center;
+  color: #004d40;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+/* Estilos para o placeholder e erro */
+.results-placeholder {
+  color: #004d40;
+}
+
+.results-column > div {
+  background: #ffffff;
+  padding: 24px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Mensagem de Erro */
+.error-message {
+  background: #fff8f8;
+  border: 1px solid #e57373;
+  border-radius: 8px;
+}
+
+.error-message h3 {
+  color: #c62828;
+  margin-top: 0;
+}
+
+.error-message p {
+  color: #d32f2f;
+  margin: 0;
+}

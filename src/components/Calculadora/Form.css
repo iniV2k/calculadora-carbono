@@ -1,0 +1,125 @@
+/* Estilo para os grupos de formulário */
+fieldset {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+  background: #fdfdfd;
+}
+
+legend {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #004d40;
+  padding: 0 10px;
+}
+
+fieldset > div {
+  margin-bottom: 15px;
+}
+
+fieldset > div:last-child {
+  margin-bottom: 0;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+  color: #555;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fcfcfc;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"]:focus {
+  outline: none;
+  border-color: #004d40;
+  box-shadow: 0 0 0 2px rgba(0, 77, 64, 0.2);
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fcfcfc;
+}
+input[type="text"]::-webkit-outer-spin-button,
+input[type="text"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #004d40;
+  box-shadow: 0 0 0 2px rgba(0, 77, 64, 0.2);
+}
+
+/* --- Estilos dos Botões --- */
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Desktop: botões lado a lado */
+@media (min-width: 768px) {
+  .button-group {
+    flex-direction: row;
+  }
+}
+
+/* Estilo base do botão */
+.button-primary,
+.button-secondary {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button-primary {
+  background-color: #00796b;
+  color: white;
+}
+.button-primary:hover {
+  background-color: #004d40;
+}
+
+.button-secondary {
+  background-color: #e0e0e0;
+  color: #333;
+}
+.button-secondary:hover {
+  background-color: #bdbdbd;
+}
+
+/* Estilo de desabilitado */
+.button-primary:disabled,
+.button-secondary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
