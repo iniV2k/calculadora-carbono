@@ -80,26 +80,26 @@ export const MetodologiaPagina: React.FC = () => {
       <ul className="fontes-lista">
         <li>
           <strong>Gasolina:</strong> {fatores.transporte.gasolina} kg
-          CO₂ / litro
+          CO₂e / litro
         </li>
         <li>
           <strong>Diesel:</strong> {fatores.transporte.diesel} kg CO₂ /
           litro
         </li>
         <li>
-          <strong>Etanol:</strong> {fatores.transporte.etanol} kg CO₂ /
+          <strong>Etanol:</strong> {fatores.transporte.etanol} kg CO₂e /
           litro
         </li>
         <li>
-          <strong>GNV:</strong> {fatores.transporte.gnv} kg CO₂ / m³
+          <strong>GNV:</strong> {fatores.transporte.gnv} kg CO₂e / m³
         </li>
         <li>
           <strong>Voo Doméstico:</strong>{" "}
-          {fatores.transporte.vooDomestico} kg CO₂ / trecho
+          {fatores.transporte.vooDomestico} kg CO₂e / trecho <span className="warning">(valor médio de emissão para simplificação dos cálculos)</span>
         </li>
         <li>
           <strong>Voo Internacional:</strong>{" "}
-          {fatores.transporte.vooInternacional} kg CO₂ / trecho
+          {fatores.transporte.vooInternacional} kg CO₂e / trecho <span className="warning">(valor médio de emissão para simplificação dos cálculos)</span>
         </li>
       </ul>
 
@@ -112,24 +112,24 @@ export const MetodologiaPagina: React.FC = () => {
       </p>
       <ul className="fontes-lista">
         <li>
-          <strong>Eletricidade:</strong> {fatores.moradia.kWh} kg CO₂ /
+          <strong>Eletricidade:</strong> {fatores.moradia.kWh} kg CO₂e /
           kWh
         </li>
         <li>
           <strong>Gás de Botijão (GLP):</strong>{" "}
-          {fatores.moradia.gasBotijao} kg CO₂ / kg
+          {fatores.moradia.gasBotijao} kg CO₂e / kg
         </li>
         <li>
           <strong>Gás Encanado (GN):</strong>{" "}
-          {fatores.moradia.gasEncanado} kg CO₂ / m³
+          {fatores.moradia.gasEncanado} kg CO₂e / m³
         </li>
         <li>
           <strong>Lixo Comum:</strong> {fatores.moradia.lixoComum} kg
-          CO₂ / kg
+          CO₂e / kg
         </li>
         <li>
           <strong>Efluentes (Tratamento de Esgoto):</strong>{" "}
-          {fatores.moradia.efluentes_per_capita} kg CO₂ / pessoa por ano
+          {fatores.moradia.efluentes_per_capita} kg CO₂e / pessoa por ano
         </li>
       </ul>
 
